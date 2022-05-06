@@ -1,0 +1,56 @@
+@import "../styles/config";
+
+.header {
+  height: 60px;
+  width: 100%;
+  background-color: $primary-color;
+  padding: 20px 60px;
+  @include phone {
+    padding: 10px 30px;
+  }
+
+  .nav_elements {
+    display: flex;
+    justify-content: space-between;
+    font-family: $font-Poppins;
+    align-items: center;
+    @include phone {
+      // display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    &_logo {
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: $text-color;
+
+      @include phone {
+        font-size: 1.3rem;
+      }
+    }
+    &_links {
+      display: flex;
+      justify-content: space-between;
+      width: 200px;
+      font-size: 1rem;
+
+      & > span {
+        transition: all 0.5s ease;
+        cursor: pointer;
+        &:hover:first-child {
+          transform: translateX(10px);
+        }
+        &:hover:last-child {
+          transform: translateX(-10px);
+        }
+      }
+
+      @include phone {
+        width: 100%;
+        font-size: 0.8rem;
+        justify-content: space-evenly;
+      }
+    }
+  }
+}

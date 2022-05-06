@@ -1,0 +1,39 @@
+@import "../styles/config";
+
+.footer {
+  padding: 40px 60px;
+  display: flex;
+  justify-content: space-between;
+  font-family: $font-Poppins;
+  gap: 1%;
+
+  &_item {
+    text-align: start;
+    width: 19%;
+
+    &_title {
+      text-transform: uppercase;
+      font-weight: 600;
+      color: rgba($text-color, 0.5);
+      margin-bottom: 10px;
+    }
+    &_description {
+      font-weight: normal;
+      color: rgba($text-color, 0.8);
+      margin: 15px 0px;
+    }
+    &_icon {
+      display: flex;
+      gap: 8px;
+      color: $text-color;
+    }
+    &_list {
+      font-weight: normal;
+      color: rgba($text-color, 0.8);
+
+      li {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

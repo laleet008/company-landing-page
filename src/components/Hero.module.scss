@@ -1,0 +1,54 @@
+@import "../styles/config";
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 60px 50px;
+
+  &_heading {
+    font-family: $font-Poppins;
+    font-weight: 500;
+    font-size: 2.5rem;
+    text-align: center;
+
+    @include phone {
+      font-size: 1.5rem;
+    }
+  }
+  &_description {
+    font-family: $font-Poppins;
+    font-weight: normal;
+    font-size: 1.4rem;
+    margin-top: 15px;
+    width: 80%;
+    text-align: center;
+
+    @include phone {
+      font-size: 1rem;
+      margin-top: 10px;
+      width: 90%;
+    }
+  }
+
+  &_btn {
+    font-family: $font-Poppins;
+    background-color: $secondary-color;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: $primary-color;
+    border-radius: 5px;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      background-color: rgba($secondary-color, 0.95);
+      box-shadow: 2px 2px $text-color;
+    }
+  }
+
+  @include phone {
+    padding: 40px 30px;
+  }
+}
