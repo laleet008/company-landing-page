@@ -1,22 +1,21 @@
-import "./App.css";
-import About from "./components/About";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Services from "./components/Services";
+import { Route, Routes } from "react-router";
+import "./main.scss";
+import Home from "./pages/Home";
+import TermsPage from "./pages/TermsPage";
+import Privacy from "./pages/Privacy";
+import Error from "./pages/Error";
 
-function App() {
+const App = () => {
   return (
     <>
-      <div>
-        <Header />
-        <Hero />
-        <Services />
-        <About />
-        <Footer />
-      </div>
+      <Routes>
+        <Route exact path="/" element={<Home />}></Route>
+        <Route exact path="/terms" element={<TermsPage />}></Route>
+        <Route exact path="/privacy" element={<Privacy />}></Route>
+        <Route path="*" element={<Error />}></Route>
+      </Routes>
     </>
   );
-}
+};
 
 export default App;

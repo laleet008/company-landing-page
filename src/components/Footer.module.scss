@@ -7,15 +7,30 @@
   font-family: $font-Poppins;
   gap: 1%;
 
+  @include phone {
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 30px;
+  }
+
   &_item {
     text-align: start;
     width: 19%;
+
+    @include phone {
+      width: 100%;
+      font-size: 0.9rem;
+    }
 
     &_title {
       text-transform: uppercase;
       font-weight: 600;
       color: rgba($text-color, 0.5);
       margin-bottom: 10px;
+
+      @include phone {
+        margin-bottom: 5px;
+      }
     }
     &_description {
       font-weight: normal;
@@ -26,10 +41,12 @@
       display: flex;
       gap: 8px;
       color: $text-color;
+      list-style: none;
     }
     &_list {
       font-weight: normal;
       color: rgba($text-color, 0.8);
+      list-style: none;
 
       li {
         margin-bottom: 5px;

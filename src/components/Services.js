@@ -1,6 +1,5 @@
 import React from "react";
 import classes from "./Services.module.scss";
-
 import { FaGlobe, FaPython } from "react-icons/fa";
 import { MdSettings } from "react-icons/md";
 

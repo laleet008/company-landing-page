@@ -40,6 +40,8 @@
     color: $primary-color;
     border-radius: 5px;
     transition: all 0.4s ease-in-out;
+    outline: none;
+    border: none;
 
     &:hover {
       cursor: pointer;
