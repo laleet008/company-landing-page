@@ -1,0 +1,16 @@
+@mixin phone {
+  @media (max-width: $breakpoint-small) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $breakpoint-med-small) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: $breakpoint-med) {
+    @content;
+  }
+}
