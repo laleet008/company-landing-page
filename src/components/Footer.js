@@ -27,8 +27,6 @@ const Footer = () => {
         <ul className={classes.footer_item_list}>
           <li>Mobile</li>
           <li>Web</li>
-          <li>Desktop</li>
-          <li>Graphics</li>
         </ul>
       </div>
 
@@ -37,8 +35,6 @@ const Footer = () => {
         <ul className={classes.footer_item_list}>
           <li>Pricing</li>
           <li>API Status</li>
-          <li>Guides</li>
-          <li>Documentation</li>
         </ul>
       </div>
       <div className={classes.footer_item}>
@@ -47,9 +43,6 @@ const Footer = () => {
           <li>Blog</li>
           <li>About us</li>
           <li>Career</li>
-          <li>Press</li>
-          <li>Our Clients</li>
-          <li>Expertise</li>
         </ul>
       </div>
 
